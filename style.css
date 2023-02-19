@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#Searching {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://images.unsplash.com/photo-1676402519279-153325e20506?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80');
+    background-position: center;
+    background-size: cover;
+}
+
+#Searching div input {
+    padding: 10px;
+    width: 400px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#Searching div button {
+    padding: 10px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    background-color: gray;
+    color: blue;
+    font-size: 20px;
+}
+
+#movie-selection {
+    background: goldenrod;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    
+}
+
+
+#movie-selection div img {
+    border-radius: 15%;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#movie-selection div {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 10px;
+    border-radius: 15px;
+}
