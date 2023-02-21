@@ -6,7 +6,7 @@ let movieData;
 
 const fecthesMovie = async () =>{
     try {
-        return await axios.get(`https://api.themoviedb.org/3/movie/550?api_key=${APIKEY}`);
+       return await axios.get(`https://api.themoviedb.org/3/trending/movie/day?api_key=${APIKEY}`);
     }
     catch(error){
         console.log(error);
@@ -92,7 +92,7 @@ async function getMoviebyKeyword() {
   async function getMovie() {
     const { data } = await fecthesMovie();
   
-    movieData = data.map((movieObject) => {
+    movieData = data.results.map((movieObject) => {
       return {
         url: `https://image.tmdb.org/t/p/w500${movieObject.poster_path}`,
         title: movieObject.title,
