@@ -42,7 +42,7 @@ const genresStr = async (genresNum) => {
     const keyword = document.getElementById('keyword');
   
     try {
-      return await axios.get(`https://api.themoviedb.org/3/search/movie?query=${keyword.value}&api_key=${APIKEY}`);
+      return await axios.get(`https://api.themoviedb.org/3/search/movie?api_key=${APIKEY}&language=en-US&query=${keyword.value}&page=1&include_adult=false`);
     } catch(error) {
       console.log(error);
       alert("There was an error", error);
